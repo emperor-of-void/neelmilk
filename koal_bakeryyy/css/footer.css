@@ -1,0 +1,128 @@
+/* ==== PREMIUM LUXURY FOOTER ==== */
+
+.lux-footer {
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1b1a1a, #000000);
+    background-image: url("../images/luxury-bg.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Black overlay */
+.lux-footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+.lux-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Title */
+.lux-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #f5d67b;
+    text-shadow: 0px 0px 12px rgba(255, 220, 130, 0.7);
+}
+
+.lux-desc {
+    font-size: 17px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.lux-badges img {
+    width: 160px;            /* Chiều rộng thống nhất */
+    height: auto;            /* Giữ đúng tỷ lệ ảnh, KHÔNG crop */
+    margin: 8px;
+    border-radius: 12px;     /* Bo góc sang hơn */
+    transition: 0.3s;
+}
+.lux-badges img:hover {
+    transform: scale(1.06);
+}
+
+
+/* Email box */
+.lux-email-box {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    max-width: 480px;
+}
+
+.lux-email-box input {
+    width: 70%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.lux-email-box input::placeholder {
+    color: #ccc;
+}
+
+.lux-email-box button {
+    padding: 14px 20px;
+    border: none;
+    background: #f5d67b;
+    color: #000;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.lux-email-box button:hover {
+    background: #ffe9a9;
+}
+
+/* Navigation */
+.lux-nav {
+    margin: 35px 0 20px;
+}
+
+.lux-nav a {
+    color: #fff;
+    margin: 0 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.lux-nav a:hover {
+    color: #f5d67b;
+}
+
+/* Info */
+.lux-info {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Credit */
+.lux-credit {
+    margin-top: 25px;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
